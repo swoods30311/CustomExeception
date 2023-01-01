@@ -5,7 +5,7 @@ public class CustomExceptionTutorial {
 
     private static void validateAge(int age) throws Exception {
         if (age < 0) {
-            throw new Exception("Age has to be a Positive Whole Number");
+            throw new AgeLessThanZeroException("Age has to be a Positive Whole Number");
         }
     }
 }
